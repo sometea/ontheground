@@ -33,7 +33,10 @@ ul li {
 .information {
     font-size: xx-large;
     font-weight: bold;
-    margin-top: 5rem;
+}
+
+.continued {
+    margin-top: -2rem;
 }
 
 .white {
