@@ -1,0 +1,48 @@
+body {
+  background-color: #dba6b6;
+  color: white;
+}
+
+h1, h2, h3 {
+    font-variant: small-caps;
+}
+
+ul {
+    font-size: large;
+}
+
+ul li {
+    list-style-type: none;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.row {
+    margin-top: 25%;
+}
+
+.row--minor {
+    margin-top: 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+.information {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+.white {
+    background-color: white;
+    color: #dba6b6;
+    padding: 2rem;
+}
+
+.purple {
+    background-color: #dba6b6;
+    color: #9b6d95;
+    padding: 1rem;
+}
