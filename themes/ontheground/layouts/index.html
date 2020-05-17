@@ -40,8 +40,9 @@
         <h1>ON THE GROUND</h1>
         <h2>A LIVING ROOM</h2>
         <h2 class="continued">CONCERT SERIES</h2>
-        <p class="information">8pm CET</p>
-        <p class="information">15th May 2020</p>
+        {{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
+        {{ .Render "date" }}
+        {{ end }}
       </div>
       <div class="six columns">
         <img src="images/logo.png" alt="on the ground logo" />
@@ -52,7 +53,9 @@
 
     <div class="row row--minor">
       <div class="twelve columns">
-        <p>To join: <a href="https://youtu.be/z1lVTKp8LgA" target="_blank">https://youtu.be/z1lVTKp8LgA</a></p>
+        {{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
+        {{ .Render "instruction" }}
+        {{ end }}
         <p>If that doesn't work for some reason, try the <a
             href="https://www.youtube.com/channel/UCrBJ2KXtXtGS8xgWoKgA0cg" target="_blank">On The Ground YouTube
             channel</a>.
@@ -60,28 +63,15 @@
       </div>
     </div>
 
+    {{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
     <div class="row row--minor">
       <div class="three columns">&nbsp;</div>
       <div class="six columns white">
-        <h2>On The Ground #1</h2>
-        <div class="purple">
-          <p class="information">Featuring</p>
-          <ul>
-            <li>Amiyna Farouque</li>
-            <li>Daire O'Doherty</li>
-            <li>David Dasenbrook</li>
-            <li>Erik Sevenans</li>
-            <li>Irwin Law</li>
-            <li>Lee Kanthoul</li>
-            <li>Liam Scarratt</li>
-            <li>Marquis' McGee</li>
-            <li>Sini-Maria Tuominen</li>
-            <li>Sweet Ross</li>
-          </ul>
-        </div>
+        {{ .Render }}
       </div>
       <div class="three column">&nbsp;</div>
     </div>
+    {{ end }}
 
     <div class="row">
       <p>Contact: David Dasenbrook, info at ontheground dot io</p>
