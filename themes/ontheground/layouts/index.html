@@ -1,5 +1,5 @@
 {{ define "main1" }}
-{{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
+{{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
 {{ .Render "instruction" }}
 {{ end }}
 <p>If that doesn't work for some reason, try the <a href="https://www.youtube.com/channel/UCrBJ2KXtXtGS8xgWoKgA0cg"
@@ -8,7 +8,7 @@
 </p>
 {{ end }}
 {{ define "main2" }}
-{{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
+{{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
 <div class="row row--minor">
   <div class="three columns">&nbsp;</div>
   <div class="six columns white">

@@ -40,7 +40,7 @@
         <h1>ON THE GROUND</h1>
         <h2>A LIVING ROOM</h2>
         <h2 class="continued">CONCERT SERIES</h2>
-        {{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
+        {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
         {{ .Render "date" }}
         {{ end }}
       </div>
