@@ -1,0 +1,15 @@
+{{ define "main1" }}
+<h4>Previous Iterations</h4>
+{{ end }}
+
+{{ define "main2" }}
+{{ range (sort .Pages "Params.dateOfEvent" "desc") }}
+<div class="row row--minor">
+  <div class="six columns white">
+    {{ .Render }}
+  </div>
+  <div class="six columns">&nbsp;</div>
+</div>
+{{ end }}
+
+{{ end }}
