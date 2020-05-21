@@ -1,85 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>On The Ground - A living room concert series</title>
-  <meta name="description" content="A living room concert series">
-  <meta name="author" content="David Dasenbrook">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="six columns center">
-        <h1>ON THE GROUND</h1>
-        <h2>A LIVING ROOM</h2>
-        <h2 class="continued">CONCERT SERIES</h2>
-        {{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
-        {{ .Render "date" }}
-        {{ end }}
-      </div>
-      <div class="six columns">
-        <img src="images/logo.png" alt="on the ground logo" />
-      </div>
-      <div class="four columns center">
-      </div>
-    </div>
-
-    <div class="row row--minor">
-      <div class="twelve columns">
-        {{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
-        {{ .Render "instruction" }}
-        {{ end }}
-        <p>If that doesn't work for some reason, try the <a
-            href="https://www.youtube.com/channel/UCrBJ2KXtXtGS8xgWoKgA0cg" target="_blank">On The Ground YouTube
-            channel</a>.
-        </p>
-      </div>
-    </div>
-
-    {{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
-    <div class="row row--minor">
-      <div class="three columns">&nbsp;</div>
-      <div class="six columns white">
-        {{ .Render }}
-      </div>
-      <div class="three column">&nbsp;</div>
-    </div>
-    {{ end }}
-
-    <div class="row">
-      <p>Contact: David Dasenbrook, info at ontheground dot io</p>
-    </div>
+{{ define "main1" }}
+{{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
+{{ .Render "instruction" }}
+{{ end }}
+<p>If that doesn't work for some reason, try the <a href="https://www.youtube.com/channel/UCrBJ2KXtXtGS8xgWoKgA0cg"
+    target="_blank">On The Ground YouTube
+    channel</a>.
+</p>
+{{ end }}
+{{ define "main2" }}
+{{ range first 1 (sort .Site.RegularPages "Params.dateOfEvent" "desc") }}
+<div class="row row--minor">
+  <div class="three columns">&nbsp;</div>
+  <div class="six columns white">
+    {{ .Render }}
   </div>
-
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-
-</html>
+  <div class="three column">&nbsp;</div>
+</div>
+{{ end }}
+{{ end }}

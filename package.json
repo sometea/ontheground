@@ -4,6 +4,7 @@
   "description": "The On The Ground website",
   "main": "index.js",
   "scripts": {
+    "start": "hugo server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "firebase deploy"
   },
