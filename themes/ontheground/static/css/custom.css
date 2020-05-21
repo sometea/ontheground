@@ -50,6 +50,8 @@ a:hover {
     background-color: white;
     color: #dba6b6;
     padding: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 .purple {
