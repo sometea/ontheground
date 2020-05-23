@@ -26,11 +26,11 @@ a:hover {
 }
 
 .row {
-    margin-top: 25%;
+    margin-top: 10%;
 }
 
-.row--minor {
-    margin-top: 10%;
+.row--major {
+    margin-top: 25%;
 }
 
 .center {
@@ -58,4 +58,19 @@ a:hover {
     background-color: #dba6b6;
     color: #9b6d95;
     padding: 1rem;
+}
+
+.button.button-primary {
+    background-color: #4574a8;
+    border-color: #4574a8;
+}
+
+.button.button-secondary {
+    background-color: #ff6134;
+    border-color: #ff6134;
+}
+
+.button.button-secondary:hover {
+    background-color: #ff9678;
+    border-color: #ff9678;
 }

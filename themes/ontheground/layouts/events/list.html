@@ -1,15 +1,15 @@
-{{ define "main1" }}
-<h4>Previous Iterations</h4>
+{{ define "header" }}
+<h4>Past Events</h4>
 {{ end }}
 
-{{ define "main2" }}
-<div class="row row--minor">
+{{ define "main" }}
+<div class="row">
   <div class="twelve columns">
-{{ range (sort .Pages "Params.dateOfEvent" "desc") }}
-  <div class="u-pull-left white">
-    {{ .Render "details" }}
+    {{ range (sort .Pages "Params.dateOfEvent" "desc") }}
+    <div class="u-pull-left white five columns">
+      {{ .Render "details" }}
+    </div>
+    {{ end }}
   </div>
-{{ end }}
-</div>
 </div>
 {{ end }}

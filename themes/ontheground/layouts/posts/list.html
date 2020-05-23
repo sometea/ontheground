@@ -1,7 +1,15 @@
-{{ define "main1" }}
+{{ define "header" }}
 <h4>News</h4>
 {{ end }}
 
-{{ define "main2" }}
-<p>All the blog posts go here!</p>
+{{ define "main" }}
+<div class="row">
+    <div class="twelve columns">
+        {{ range .Pages }}
+        <div class="u-pull-left white five columns">
+            {{ .Render }}
+        </div>
+        {{ end }}
+    </div>
+</div>
 {{ end }}

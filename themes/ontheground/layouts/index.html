@@ -1,15 +1,17 @@
-{{ define "main1" }}
-{{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-{{ .Render "instruction" }}
+{{ define "header" }}
+<div class="row">
+  <div class="twelve columns">
+    {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
+    {{ .Render "instruction" }}
+    {{ end }}
+    <a class="button button-secondary" href="https://ko-fi.com/onthegroundconcerts">Support the Artists</a>
+  </div>
+</div>
 {{ end }}
-<p>If that doesn't work for some reason, try the <a href="https://www.youtube.com/channel/UCrBJ2KXtXtGS8xgWoKgA0cg"
-    target="_blank">On The Ground YouTube
-    channel</a>.
-</p>
-{{ end }}
-{{ define "main2" }}
+
+{{ define "main" }}
 {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-<div class="row row--minor">
+<div class="row">
   <div class="three columns">&nbsp;</div>
   <div class="six columns white">
     {{ .Render }}
