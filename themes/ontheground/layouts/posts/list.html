@@ -3,13 +3,9 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="row">
-    <div class="twelve columns">
-        {{ range .Pages }}
-        <div class="u-pull-left white five columns">
-            {{ .Render }}
-        </div>
-        {{ end }}
-    </div>
+{{ range .Pages }}
+<div class="u-pull-left white five columns">
+    {{ .Render }}
 </div>
+{{ end }}
 {{ end }}

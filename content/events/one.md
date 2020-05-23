@@ -6,6 +6,12 @@ joynLink: "https://youtu.be/z1lVTKp8LgA"
 artists: ["Amiyna Farouque", "Daire O'Doherty", "David Dasenbrook", "Erik Sevenans","Irwin Law","Lee Kanthoul","Liam Scarratt","Marquis' McGee","Sini-Maria Tuominen","Sweet Ross"]
 draft: false
 ---
+This episode was proudly supported by the "Renegade Saints" improv group of Geneva, Switzerland:
+https://www.facebook.com/RSIMPROV,
+https://www.renegadesaints.ch
+
+It featured the following artists:
+
 #### David Dasenbrook
 
 "Monday" by Bring Your Bear
@@ -18,7 +24,7 @@ https://beamtime.bandcamp.com
 
 https://lefuzzball.bandcamp.com/releases
 
-#### Sweet Ross:
+#### Sweet Ross
 "I need a dollar" by Aloe Blacc
 
 "Me gustas tu" by Manu Chao
@@ -27,7 +33,7 @@ https://lefuzzball.bandcamp.com/releases
 
 IG: @sweet_ross @wearesecondround
 
-#### Amiyna:
+#### Amiyna
 "Small Infinity" by Whim
 
 "Two wrongs" by Amiyna
@@ -38,7 +44,7 @@ https://soundcloud.com/amiyna-music/
 
 IG: @amiynaleonina
 
-#### Liam:
+#### Liam
 "Indigo" by Teal 
 
 "Everything but you" by Thirsty Merc
@@ -48,7 +54,7 @@ http://soundcloud.com/secondhandlovers
 #### Sini-Maria:
 "Million reasons" by Lady Gaga
 
-#### Irwin:
+#### Irwin
 "Said" by Irwin
 
 http://soundcloud.com/rama-returns
@@ -57,7 +63,7 @@ http://soundcloud.com/secondhandlovers
 
 https://lefuzzball.bandcamp.com/releases
 
-#### Erik:
+#### Erik
 "Warming your house" by Bring your bear
 "Whale Surfin' " by Kalisto Bay
 
@@ -65,17 +71,17 @@ https://lefuzzball.bandcamp.com/releases
 
 https://bringyourbear.bandcamp.com/re...
 
-#### Lee:
+#### Lee
 "Dreams" by Fleetwood Mac
 
-#### Marquis' McGee:
+#### Marquis' McGee
 "Procession of Cedar" by Marquis' McGee
 
 https://www.marquismcgee.com
 
 http://soundcloud.com/rama-returns
 
-#### Daire:
+#### Daire
 "Older chests" by Damian Rice
 
 The Pact (I'll be your fever)" by Villagers
@@ -83,7 +89,3 @@ The Pact (I'll be your fever)" by Villagers
 "I'm the Great Gatsby" by Daire
 
 http://soundcloud.com/secondhandlovers
-
-This episode was proudly supported by the "Renegade Saints" improv group of Geneva, Switzerland:
-https://www.facebook.com/RSIMPROV,
-https://www.renegadesaints.ch

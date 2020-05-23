@@ -53,12 +53,14 @@
         </p>
       </div>
     </div>
-
-    {{ block "header" . }}
-    {{ end }}
-
-    {{ block "main" . }}
-    {{ end }}
+    <div class="row">
+        {{ block "header" . }}
+        {{ end }}
+    </div>
+    <div class="row">
+        {{ block "main" . }}
+        {{ end }}
+    </div>
 
     <div class="u-cf"></div>
     <div class="row">

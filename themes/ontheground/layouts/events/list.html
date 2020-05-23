@@ -3,13 +3,9 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="row">
-  <div class="twelve columns">
-    {{ range (sort .Pages "Params.dateOfEvent" "desc") }}
-    <div class="u-pull-left white five columns">
-      {{ .Render "details" }}
-    </div>
-    {{ end }}
-  </div>
+{{ range (sort .Pages "Params.dateOfEvent" "desc") }}
+<div class="u-pull-left white five columns">
+  {{ .Render "details" }}
 </div>
+{{ end }}
 {{ end }}

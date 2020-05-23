@@ -11,12 +11,10 @@
 
 {{ define "main" }}
 {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-<div class="row">
-  <div class="three columns">&nbsp;</div>
-  <div class="six columns white">
-    {{ .Render }}
-  </div>
-  <div class="three column">&nbsp;</div>
+<div class="three columns">&nbsp;</div>
+<div class="six columns white">
+  {{ .Render }}
 </div>
+<div class="three column">&nbsp;</div>
 {{ end }}
 {{ end }}
