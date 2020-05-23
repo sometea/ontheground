@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: master
+collections:
+  - name: "event"
+    label: "Event"
+    folder: "content/events"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Date Of Event", name: "dateOfEvent", widget: "datetime"}
+      - {label: "YouTube Link", name: "joynLink", widget: "string"}
+      - {label: "Artist Names", name: "artists", widget: "list" }
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "post"
+    label: "News Post"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Body", name: "body", widget: "markdown"}
