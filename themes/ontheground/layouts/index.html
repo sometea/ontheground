@@ -1,4 +1,12 @@
-{{ define "header" }}
+{{ define "top" }}
+<h2>A LIVING ROOM</h2>
+<h2 class="continued">CONCERT SERIES</h2>
+{{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
+{{ .Render "date" }}
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
 <div class="row">
   <div class="twelve columns">
     {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
@@ -7,9 +15,6 @@
     <a class="button button-secondary" href="https://ko-fi.com/onthegroundconcerts">Support the Artists</a>
   </div>
 </div>
-{{ end }}
-
-{{ define "main" }}
 {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
 <div class="three columns">&nbsp;</div>
 <div class="six columns white">

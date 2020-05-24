@@ -16,7 +16,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Date Of Event", name: "dateOfEvent", widget: "datetime"}
-      - {label: "YouTube Link", name: "joynLink", widget: "string"}
+      - {label: "YouTube Link", name: "joinLink", widget: "string"}
       - {label: "Artist Names", name: "artists", widget: "list" }
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}

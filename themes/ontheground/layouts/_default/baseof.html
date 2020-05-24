@@ -40,11 +40,9 @@
     <div class="row row--major">
       <div class="six columns center">
         <h1>ON THE GROUND</h1>
-        <h2>A LIVING ROOM</h2>
-        <h2 class="continued">CONCERT SERIES</h2>
-        {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-        {{ .Render "date" }}
+        {{ block "top" . }}
         {{ end }}
+        &nbsp;
       </div>
       <div class="six columns">
         <img src="/images/logo.png" alt="on the ground logo" /><br />
@@ -54,10 +52,6 @@
           <a href="/posts">News</a>
         </p>
       </div>
-    </div>
-    <div class="row">
-        {{ block "header" . }}
-        {{ end }}
     </div>
     <div class="row">
         {{ block "main" . }}
