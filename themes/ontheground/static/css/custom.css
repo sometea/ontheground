@@ -21,6 +21,16 @@ a {
     color: #9b6d95;
 }
 
+.information a {
+    color: white;
+    text-decoration: none;
+}
+
+.information img {
+    height: 32px;
+    vertical-align: baseline;
+}
+
 a:hover {
     color: white;
 }
@@ -34,7 +44,7 @@ a:hover {
 }
 
 .row--last {
-    margin-bottom: calc(100vh - 25% - 45rem)
+    margin-bottom: calc(100vh - 25% - 42rem)
 }
 
 .center {

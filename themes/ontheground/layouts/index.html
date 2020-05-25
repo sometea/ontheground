@@ -3,16 +3,14 @@
 <h2 class="continued">CONCERT SERIES</h2>
 {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
 {{ .Render "date" }}
+{{ .Render "instruction" }}
 {{ end }}
 {{ end }}
 
 {{ define "main" }}
 <div class="row row--last">
   <div class="twelve columns">
-    {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-    {{ .Render "instruction" }}
-    {{ end }}
-    <a class="button button-secondary" href="https://ko-fi.com/onthegroundconcerts">Support the Artists</a>
+    <a class="button button-secondary" href="https://ko-fi.com/onthegroundconcerts" target="_blank">Support the Artists</a>
   </div>
 </div>
 {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
