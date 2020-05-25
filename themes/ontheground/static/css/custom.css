@@ -33,6 +33,10 @@ a:hover {
     margin-top: 25%;
 }
 
+.row--last {
+    margin-bottom: calc(100vh - 25% - 45rem)
+}
+
 .center {
     text-align: center;
 }

@@ -7,7 +7,7 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="row">
+<div class="row row--last">
   <div class="twelve columns">
     {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
     {{ .Render "instruction" }}

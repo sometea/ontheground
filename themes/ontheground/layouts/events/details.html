@@ -1,7 +1,6 @@
 <h2>{{ .Title }}</h2>
-<div class="purple">
-    <p>This event took place on {{ dateFormat "January 2 2006" .Params.dateOfEvent }}.</p>
-    
+<p>{{ dateFormat "January 2 2006" .Params.dateOfEvent }}</p>
+<div class="purple">    
     <p>You can watch this event here:
     <a href="{{ .Params.joynLink }}" target="_blank">{{ .Params.joynLink }}</a></p>
 
