@@ -18,7 +18,8 @@ ul li {
 }
 
 a {
-    color: #9b6d95;
+    color: white;
+    text-decoration: none;
 }
 
 .information a {
@@ -33,6 +34,7 @@ a {
 
 a:hover {
     color: white;
+    text-decoration: underline;
 }
 
 .row {
@@ -44,7 +46,7 @@ a:hover {
 }
 
 .row--last {
-    margin-bottom: calc(100vh - 25% - 42rem)
+    margin-top: calc(100vh - 25% - 42rem)
 }
 
 .center {
