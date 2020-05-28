@@ -43,18 +43,12 @@
         &nbsp;
       </div>
       <div class="six columns">
-        <p class="center">
-          <a href="/">Home</a>
-          <a href="/events">Past</a>
-          <a href="/posts">News</a>
-        </p>
         <img src="/images/logo.png" alt="on the ground logo" /><br />
       </div>
     </div>
-    <div class="row row--last">
-        {{ block "main" . }}
-        {{ end }}
-    </div>
+
+    {{ block "main" . }}
+    {{ end }}
 
     <div class="u-cf"></div>
     <div class="row">
