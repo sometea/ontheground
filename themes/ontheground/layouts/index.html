@@ -21,7 +21,7 @@
 </div>
 <h4 class="new-section">Past Events</h4>
 <div class="row">
-  {{ range (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
+  {{ range after 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
   <div class="u-pull-left white five columns">
     {{ .Render "details" }}
   </div>

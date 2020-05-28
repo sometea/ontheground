@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-{{ range (sort .Pages "Params.dateOfEvent" "desc") }}
+{{ range after 1 (sort .Pages "Params.dateOfEvent" "desc") }}
 <div class="u-pull-left white five columns">
   {{ .Render "details" }}
 </div>
