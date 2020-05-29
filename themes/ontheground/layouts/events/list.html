@@ -4,8 +4,10 @@
 
 {{ define "main" }}
 {{ range after 1 (sort .Pages "Params.dateOfEvent" "desc") }}
-<div class="u-pull-left white five columns">
-  {{ .Render "details" }}
+<div class="row row--major">
+  <div class="white twelve columns">
+    {{ .Render "details" }}
+  </div>
 </div>
 {{ end }}
 {{ end }}

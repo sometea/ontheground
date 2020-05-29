@@ -4,8 +4,10 @@
 
 {{ define "main" }}
 {{ range .Pages }}
-<div class="u-pull-left white five columns">
-    {{ .Render }}
+<div class="row row--major">
+    <div class="white twelve columns">
+        {{ .Render }}
+    </div>
 </div>
 {{ end }}
 {{ end }}

@@ -5,16 +5,18 @@
 {{ .Render "date" }}
 {{ .Render "instruction" }}
 {{ end }}
-<p class="information"><a class="button button-secondary" href="https://ko-fi.com/onthegroundconcerts"
+<p class="information"><a class="button button--primary" href="https://ko-fi.com/onthegroundconcerts"
     target="_blank">Support the Artists</a></p>
 {{ end }}
 
 {{ define "main" }}
 {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-<div class="three columns">&nbsp;</div>
-<div class="six columns white">
-  {{ .Render }}
+<div class="row row--last">
+  <div class="three columns">&nbsp;</div>
+  <div class="six columns white">
+    {{ .Render }}
+  </div>
+  <div class="three column">&nbsp;</div>
 </div>
-<div class="three column">&nbsp;</div>
 {{ end }}
 {{ end }}
