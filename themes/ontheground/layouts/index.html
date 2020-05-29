@@ -10,29 +10,11 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="row row--last">
-  {{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-  <div class="three columns">&nbsp;</div>
-  <div class="six columns white">
-    {{ .Render }}
-  </div>
-  <div class="three column">&nbsp;</div>
-  {{ end }}
+{{ range first 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
+<div class="three columns">&nbsp;</div>
+<div class="six columns white">
+  {{ .Render }}
 </div>
-<h4 class="new-section">Past Events</h4>
-<div class="row">
-  {{ range after 1 (sort (where .Site.RegularPages "Type" "events") "Params.dateOfEvent" "desc") }}
-  <div class="u-pull-left white five columns">
-    {{ .Render "details" }}
-  </div>
-  {{ end }}
-</div>
-<h4 class="new-section">News</h4>
-<div class="row">
-  {{ range (where .Site.RegularPages "Type" "posts") }}
-  <div class="u-pull-left white five columns">
-    {{ .Render }}
-  </div>
-</div>
+<div class="three column">&nbsp;</div>
 {{ end }}
 {{ end }}
