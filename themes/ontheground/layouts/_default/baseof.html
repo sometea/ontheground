@@ -57,25 +57,13 @@
     {{ end }}
 
     <div class="u-cf"></div>
-    <div class="row">
+    <div class="row row--major">
       <p>Contact: David Dasenbrook, info at ontheground dot io</p>
     </div>
   </div>
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 
 </html>
