@@ -1,0 +1,13 @@
+{{ define "top" }}
+<h4>News</h4>
+{{ end }}
+
+{{ define "main" }}
+{{ range .Pages }}
+<div class="row row--major">
+    <div class="white twelve columns">
+        {{ .Render }}
+    </div>
+</div>
+{{ end }}
+{{ end }}

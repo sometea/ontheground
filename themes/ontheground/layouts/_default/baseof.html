@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>On The Ground - A living room concert series</title>
+  <meta name="description" content="A living room concert series">
+  <meta name="author" content="David Dasenbrook">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row row--major">
+      <div class="six columns center">
+        <h1>ON THE GROUND</h1>
+        {{ block "top" . }}
+        {{ end }}
+        &nbsp;
+      </div>
+      <div class="six columns">
+        <p>
+          <img src="/images/logo.png" alt="on the ground logo" />
+        </p>
+        <p class="center menu">
+          <a href="/">Home</a>
+          <a href="/events">Past</a>
+          <a href="/posts">News</a>
+        </p>
+      </div>
+    </div>
+    {{ block "main" . }}
+    {{ end }}
+
+    <div class="u-cf"></div>
+    <div class="row row--major">
+      <p>Contact: David Dasenbrook, info at ontheground dot io</p>
+    </div>
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
 </html>
