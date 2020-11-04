@@ -19,5 +19,6 @@
     "music"
   ],
   "author": "David Dasenbrook",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
