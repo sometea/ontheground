@@ -18,7 +18,7 @@ It featured the following artists:
 
 "I Want To Be Well" by Bring Your Bear
 
-https://bringyourbear.bandcamp.com/re...
+https://bringyourbear.bandcamp.com/releases
 
 https://beamtime.bandcamp.com
 
@@ -69,7 +69,7 @@ https://lefuzzball.bandcamp.com/releases
 
 "Avalanches" by Kalisto Bay
 
-https://bringyourbear.bandcamp.com/re...
+https://bringyourbear.bandcamp.com/releases
 
 #### Lee
 "Dreams" by Fleetwood Mac
